@@ -1,0 +1,250 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-coffee-section {
+    grid-area: acs;
+    display: grid;
+    grid-template-rows: 280px 1fr;
+    grid-gap: 61px;
+
+    margin-left: 40px;
+}
+
+.about-coffee-div {
+    display: grid;
+    grid-template-areas: "acdp acdh1 acdsp acdtp";
+    grid-template-rows: repeat(4, 1fr);
+    align-items: start;
+    grid-row: 1/2;
+
+
+}
+
+
+.about-coffee-div-p {
+    grid-area: acdp;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: left;
+    color: #EB5757;
+
+}
+
+.about-coffee-div-h1 {
+    grid-area: acdh1;
+
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 69px;
+    text-align: left;
+
+}
+
+.about-coffee-div-second-p {
+    grid-area: acdsp;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    color: #9C8E76;
+
+}
+
+.about-coffee-div-third-p {
+    grid-area: acdtp;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #828282;
+}
+
+.big-coffee-div {
+    grid-area: bcd;
+    display: grid;
+    grid-template-rows: 332px 383px;
+    width: 321px;
+    margin-top: 40px;
+    /* height: 715px;*/
+
+}
+
+.big-coffee-desc {
+    display: grid;
+
+    grid-row: 2/3;
+    grid-column: 1;
+    grid-template-rows: 190px 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". .""bch3 bch3""bcp bcp""bcc bcprice";
+}
+
+.big-coffee-img {
+    grid-row: 1/3;
+    grid-column: 1;
+    z-index: 1;
+}
+
+
+.big-cofee-count {
+    grid-area: bcc;
+}
+
+.big-cofee-price {
+    grid-area: bcprice;
+
+}
+
+
+.big-coffee-h3 {
+
+    grid-area: bch3;
+    color: #3F3631;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+}
+
+.big-coffee-p {
+
+    grid-area: bcp;
+    color: #9C8E76;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+}
+
+.big-coffee-desc,
+.small-coffee-desc {
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.big-cofee-count,
+.big-cofee-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+    margin-left: 10px;
+    color: #3F3631;
+
+}
+
+
+.body {
+    display: grid;
+    grid-template-columns: 100px 321px 1fr 100px;
+    grid-template-rows: 170px 1fr 50px;
+    grid-template-areas: ". header header  ."
+        ". bcd acs ."". . . .";
+    height: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    background-image: url('../images/background_image.png');
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 347px 1.1fr 1.1fr 0.5fr;
+    align-items: center;
+}
+
+.header-logo-img {
+    grid-column: 1/2;
+    margin-left: 10px;
+
+}
+
+.header-nav {
+    grid-column: 2/4;
+
+
+}
+
+.header-profile {
+    display: grid;
+    grid-column: 4/5;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.header-cart-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-menu {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+
+    margin: 25px;
+}
+
+.header-profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-coffee-div-all {
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: repeat(4, 205px);
+    grid-gap: 20px;
+
+}
+
+.small-coffee-div {
+    display: grid;
+    grid-template-rows: 154px 229px;
+    height: 413px;
+}
+
+.small-coffee-img {
+    grid-row: 1/3;
+    grid-column: 1;
+
+    z-index: 1;
+}
+
+.small-coffee-desc {
+    display: grid;
+
+    grid-row: 2/3;
+    grid-column: 1;
+    grid-template-rows: 133px 1fr 4fr;
+    grid-template-areas: ".""sch3""scp";
+    height: 259px;
+}
+
+.small-coffee-h3 {
+
+    grid-area: sch3;
+    color: #3F3631;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+
+.small-coffee-p {
+
+    grid-area: scp;
+    color: #9C8E76;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
